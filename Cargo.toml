@@ -1,0 +1,17 @@
+[package]
+name = "minimal"
+version = "0.1.0"
+authors = ["MrPeanut"]
+edition = "2018"
+
+[lib]
+name = "minimal"
+crate-type = ["staticlib"]
+
+[dependencies]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
